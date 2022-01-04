@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  margin:0;
+  font-family: Arial;
+}
+.container{
+   display:flex;
+   flex-flow: row wrap;
+}
+.header{
+    background-color:#F5B7B1 ;
+    color: #808080;
+    width:100%;
+    text-align: center; 
+    padding-top: 10px;
+    font-weight: bold;
+    box-sizing: border-box;
+    margin:5px;
+}
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: space-evenly;
+}
+.Right{
+  width: 100%;
+  height: 300px; 
+  padding: 10px;
+  text-align: center;
+  margin:5px;
+}
+.Left{
+  width: 100%;
+  height: 300px; 
+  padding: 10px;
+  text-align: center;
+  margin:5px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.Middle{
+  width: 100%;
+  height: 300px; 
+  padding: 10px;
+  text-align: center;
+  margin:5px;
+}
+.signup
+{
+  height:100px;
+  width:100%;
+  background-color: #F5B7B1 ;
+  padding-top: 30px;
+  text-align: center;
+  color: #808080;
+  margin:5px;
+}
+.content{
+  height:100px;
+  width:100%;
+  background-color: #F5B7B1  ;
+  padding-top: 30px;
+  text-align: center;
+  color: #808080;
+  margin:5px;
+
+}
+nav
+{
+background-image: url(/home/tringapps/Downloads/spriteimage.svg);
+background-position: -2pt 142pt;
+background-size: auto;
+height: 30px;
+width: 184px;
+float: right;
+}
+.navbar
+{
+height:33px;
+background-color:#F5B7B1 ;
+}
+@media screen and (max-width:768px) 
+{
+   .Right,.Middle,.Left.signup
+   {
+       flex: 100%;
+   }
+}
+@media all and (max-width:768px) and (min-width: 481px) 
+    {
+         .column1,.column2,.column3.signup
+        {
+            flex: 50%;
+        }
+    }
+@media all and (max-width:480px) and (min-width:320px)
+    {
+             .column1,.column2,.column3.signup
+            {
+                flex: 100%;
+            }
+    }
