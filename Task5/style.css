@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: "poppins";
+    justify-content: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(87,79,25,1) 0%, rgba(0,212,255,1) 0%, rgba(232,214,6,0.938813025210084) 100%);
+}
+.h1{
+    text-align: center;
+    color: rgb(76, 146, 100);
+}
+
+.container{
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    position: relative;
+}
+
+.container .image{
+    display: block;
+}
+
+.container .image img{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.container .image .info{
+    position: absolute;
+    top: 0;
+    padding: 15px 30px;
+  }
+  
+.container .image .info h2{
+    color: #fff;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
+  
+  .container .image .info p{
+    color: #fff;
+    background: rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    width: 60%;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+.container .button{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+.container .button a{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: middle;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+    user-select: none;
+}
+
+.container .button .prev{
+    border-radius: 0 5px 5px 0;
+}
+
+.container .button .next{
+    border-radius: 5px 0 0 5px;
+}
+
+.dots{
+    text-align: center;
+    position: absolute;
+    bottom: 8px;
+    left: 45%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 5px 10px;
+    height: 30px;
+    border-radius: 15px;
+
+}
+
+.dot{
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #bbb;
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.active, .dot:hover{
+    background: rgb(116, 116, 94);
+}
