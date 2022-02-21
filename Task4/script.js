@@ -96,10 +96,10 @@ function readFormData(){
     if(document.getElementById("English").checked){
         formData["language"] =document.getElementById("English").value;    
     }
-    if(document.getElementById("youtube").checked){
+    if(document.getElementById("Tamil").checked){
         formData["language"] =document.getElementById("Tamil").value;    
     }
-    if(document.getElementById("music").checked){
+    if(document.getElementById("Hindhi").checked){
         formData["language"] =document.getElementById("Hindhi").value;    
     }
     console.log(document.getElementById("language").value);
