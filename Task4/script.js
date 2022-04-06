@@ -206,7 +206,7 @@ function onFormSubmit() {
                 insertNewRecord(formData);
        } 
     else {
-                   updateRecord(formData);
+                 updateRecord();
        }
     resetForm();
     }
