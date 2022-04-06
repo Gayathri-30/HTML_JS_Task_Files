@@ -1,5 +1,5 @@
 let li = document.querySelectorAll(".faq-text li");
-for (var i = 0; i < li.length; i++) {
+for (let i for li) {
   li[i].addEventListener("click", (e)=>{
     let clickedLi;
     if(e.target.classList.contains("question-arrow")){
