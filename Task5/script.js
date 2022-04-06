@@ -3,7 +3,8 @@
         displayimg(imageno);
 
         function nextimg(n){
-            displayimg(imageno= n+iimageno)
+            imageno= n+imageno;
+            displayimg(imageno)
         }
 
         function currentSlide(n){
