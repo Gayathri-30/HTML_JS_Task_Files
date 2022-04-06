@@ -79,7 +79,6 @@ function validateLanguage() {
  }
  //read from data
 function readFormData(){
-    var formData = {};
     formData["username"] = document.getElementById("username").value;
     formData["DOB"] = document.getElementById("DOB").value;
     formData["Age"] = document.getElementById("Age").value;
